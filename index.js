@@ -25,8 +25,22 @@ let posts = [
   }
 ];
 
+app.get("/", (req,res) => {
+  res.send("Welcome to Quora App");
+});
+
 app.get("/posts", (req,res) => {
   res.render("index.ejs", {posts});
+});
+
+app.get("/posts/new", (req,res) => {
+  res.render("new.ejs");
+});
+
+app.post("/posts", (req,res) => {
+  let {username, content} = req.body;
+  posts.push({username, content});
+  res.send("Request is working");
 });
 
 app.listen(port, () => {
