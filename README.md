@@ -54,14 +54,6 @@ This project demonstrates how to build API endpoints, serve static files, and re
 
 ## 📡 API Endpoints
 
-### 🔐 Authentication
-
-| Method | Endpoint | Description |
-|--------|---------|------------|
-| POST | `/api/auth/register` | Register user |
-| POST | `/api/auth/login` | Login user |
-
----
 
 ### 📦 Resources
 
@@ -74,14 +66,3 @@ This project demonstrates how to build API endpoints, serve static files, and re
 | DELETE | `/api/resources/:id` | Delete item |
 
 ---
-
-## 🔒 Authentication Flow
-
-```text
-User Login → JWT Token Generated
-        ↓
-Token Sent in Request Headers
-        ↓
-Middleware Verifies Token
-        ↓
-Access Granted / Denied
