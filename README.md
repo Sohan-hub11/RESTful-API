@@ -78,7 +78,7 @@ This project demonstrates how to build API endpoints, serve static files, and re
 
 ## 🔄 CRUD Flow
 
-    ```text
+    
     Create  → POST   /posts
     Read    → GET    /posts
     Read    → GET    /posts/:id
@@ -89,16 +89,20 @@ This project demonstrates how to build API endpoints, serve static files, and re
 
 ## 🧠 How It Works
 
-1. User visits /posts → sees all posts
-2. Creates new post via /posts/new
-3. Data submitted → Data stored in MongoDB
-4. Response returned as JSON
-5. Each post has unique uuid
-6. User can:
-  - View post (/posts/:id)
-  - Edit post (/posts/:id/edit)
-  - Update post (PATCH)
-  - Delete post (DELETE)
+1. User visits `/posts` → sees all posts  
+2. Creates new post via `/posts/new`  
+3. Data submitted → stored in MongoDB  
+4. Response returned as JSON  
+5. Each post has a unique `uuid`  
+
+### 🔄 User Actions
+
+- View post → `/posts/:id`  
+- Edit post → `/posts/:id/edit`  
+- Update post → `PATCH /posts/:id`  
+- Delete post → `DELETE /posts/:id`  
+
+---
 
 ## ⚠️ Notes
 
