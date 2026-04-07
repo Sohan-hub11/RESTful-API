@@ -109,3 +109,31 @@ This project demonstrates how to build API endpoints, serve static files, and re
 - Uses method-override for PATCH & DELETE
 - Data is stored in memory (not database)
 - Page rendering handled via EJS templates
+
+---
+
+## 🎬 Preview
+
+<p align="center">
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="500"/>
+</p>
+
+---
+
+## 📈 Future Enhancements
+
+- 🔄 Refresh Tokens  
+- 📊 API Rate Limiting  
+- 🧾 Swagger Documentation  
+- ☁️ Deployment (AWS / Render)  
+- 🐳 Docker Support  
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by [Sohan Samanta](https://github.com/Sohan-hub11)
+
+---
+
+⭐ If you found this helpful, give it a **star** and consider contributing!
