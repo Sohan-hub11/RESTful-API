@@ -35,3 +35,16 @@ This project demonstrates how to build API endpoints, serve static files, and re
 ---
 
 ## 📁 Project Structure
+
+    RESTful-API/
+    │
+    ├── controllers/  # Business logic
+    ├── models/       # Database schemas
+    ├── routes/       # API endpoints
+    ├── middleware/   # Auth & validation
+    ├── config/       # DB configuration
+    │
+    ├── app.js        # Express app
+    ├── server.js     # Entry point
+    ├── package.json
+    └── .env
