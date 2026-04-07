@@ -54,15 +54,54 @@ This project demonstrates how to build API endpoints, serve static files, and re
 
 ## 📡 API Endpoints
 
-
-### 📦 Resources
+### 🏠 Home
 
 | Method | Endpoint | Description |
 |--------|---------|------------|
-| GET | `/api/resources` | Get all data |
-| GET | `/api/resources/:id` | Get single item |
-| POST | `/api/resources` | Create item |
-| PUT | `/api/resources/:id` | Update item |
-| DELETE | `/api/resources/:id` | Delete item |
+| GET | `/` | Welcome message |
 
 ---
+
+### 📝 Posts
+
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| GET | `/posts` | Get all posts |
+| GET | `/posts/new` | Render form to create new post |
+| POST | `/posts` | Create a new post |
+| GET | `/posts/:id` | Get a single post |
+| GET | `/posts/:id/edit` | Render edit form |
+| PATCH | `/posts/:id` | Update a post |
+| DELETE | `/posts/:id` | Delete a post |
+
+---
+
+## 🔄 CRUD Flow
+
+    ```text
+    Create  → POST   /posts
+    Read    → GET    /posts
+    Read    → GET    /posts/:id
+    Update  → PATCH  /posts/:id
+    Delete  → DELETE /posts/:id
+
+---
+
+## 🧠 How It Works
+
+1. User visits /posts → sees all posts
+2. Creates new post via /posts/new
+3. Data submitted → Data stored in MongoDB
+4. Response returned as JSON
+5. Each post has unique uuid
+6. User can:
+  - View post (/posts/:id)
+  - Edit post (/posts/:id/edit)
+  - Update post (PATCH)
+  - Delete post (DELETE)
+
+## ⚠️ Notes
+
+- Uses method-override for PATCH & DELETE
+- Data is stored in memory (not database)
+- Page rendering handled via EJS templates
