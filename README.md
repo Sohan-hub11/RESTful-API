@@ -48,3 +48,40 @@ This project demonstrates how to build API endpoints, serve static files, and re
     ├── server.js     # Entry point
     ├── package.json
     └── .env
+
+
+---
+
+## 📡 API Endpoints
+
+### 🔐 Authentication
+
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login user |
+
+---
+
+### 📦 Resources
+
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| GET | `/api/resources` | Get all data |
+| GET | `/api/resources/:id` | Get single item |
+| POST | `/api/resources` | Create item |
+| PUT | `/api/resources/:id` | Update item |
+| DELETE | `/api/resources/:id` | Delete item |
+
+---
+
+## 🔒 Authentication Flow
+
+```text
+User Login → JWT Token Generated
+        ↓
+Token Sent in Request Headers
+        ↓
+Middleware Verifies Token
+        ↓
+Access Granted / Denied
